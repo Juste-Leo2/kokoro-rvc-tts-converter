@@ -62,6 +62,17 @@ Une fois l'application lancée, vous pouvez utiliser l'interface Gradio pour :
 
 Amusez-vous avec le convertisseur texte-audio !
 
+## Modèles de Voix RVC
+
+Vous pouvez trouver une grande variété de modèles de voix RVC pré-entraînés sur [weights.gg](https://www.weights.gg/).
+
+Pour utiliser ces modèles avec ce convertisseur :
+
+1.  **Téléchargez** les fichiers `.pth` et `.index` du modèle de voix RVC que vous souhaitez utiliser depuis [weights.gg](https://www.weights.gg/).
+2.  **Placez** le fichier `.pth` dans le dossier `modelRVG/pth/` de votre projet. Créez le dossier `pth` s'il n'existe pas déjà.
+3.  **Placez** le fichier `.index` dans le dossier `modelRVG/index/` de votre projet. Créez le dossier `index` s'il n'existe pas déjà.
+4.  **Relancez** l'application `python main.py`. Les nouveaux modèles de voix RVC devraient maintenant apparaître dans les listes déroulantes de l'interface Gradio.
+
 ## Sources
 
 Ce projet utilise les ressources suivantes :
