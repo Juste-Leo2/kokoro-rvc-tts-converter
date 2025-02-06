@@ -3,7 +3,7 @@
 [![Français](https://img.shields.io/badge/Langue-Français-blue.svg)](./README_FR.md)
 [![English](https://img.shields.io/badge/Language-English-green.svg)](./README_EN.md)
 
-[**Lire ce README en Français / Read this README in French**](./README_FR.md)
+[**Lire ce README en Français / Read this README in French**](./README.md)
 
 ## Description
 
