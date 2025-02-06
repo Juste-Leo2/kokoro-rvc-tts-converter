@@ -22,7 +22,7 @@ Vous pouvez les télécharger depuis Google Drive :
 
 [**Télécharger les Modèles Pré-entraînés (Google Drive)**](https://drive.google.com/drive/folders/1G6O0FgyFdwVjn3rMoJZRbg6gC1OrkaI9?usp=sharing)
 
-**Une fois téléchargé, assurez-vous de placer les fichiers correctement dans les dossiers appropriés de votre projet.**  Typiquement, les fichiers `.pth` et `.index` pour RVC vont dans `modelRVG/pth/` et `modelRVG/index/` respectivement, et les modèles Kokoro TTS (.bin, .onnx, .index) dans le dossier `model_tts` ou un dossier similaire selon la structure de votre projet.  **Vérifiez les instructions spécifiques à votre projet pour le placement exact des fichiers.**
+**Une fois téléchargé, assurez-vous de placer les fichiers correctement dans les dossiers appropriés de votre projet.**  Typiquement, les fichiers `.pth` et `.index` pour RVC vont dans `modelRVG/pth/` et `modelRVG/index/` respectivement, et les modèles Kokoro TTS (.bin, .onnx, .index) dans le dossier `model_tts`.  
 
 ## Installation
 
