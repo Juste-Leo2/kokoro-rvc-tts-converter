@@ -22,8 +22,7 @@ You can download them from Google Drive:
 
 [**Download Pre-trained Models (Google Drive)**](https://drive.google.com/drive/folders/1G6O0FgyFdwVjn3rMoJZRbg6gC1OrkaI9?usp=sharing)
 
-**Once downloaded, make sure to place the files correctly in the appropriate folders of your project.** Typically, `.pth` and `.index` files for RVC go into `modelRVG/pth/` and `modelRVG/index/` respectively, and Kokoro TTS models (.bin, .onnx, .index) into the `model_tts` folder or a similar folder depending on your project's structure. **Check the specific instructions for your project for the exact file placement.**
-
+**Once downloaded, make sure to place the files correctly in the appropriate folders of your project.** Typically, `.pth` and `.index` files for RVC go into `modelRVG/pth/` and `modelRVG/index/` respectively, and Kokoro TTS models (.bin, .onnx) into the `model_tts`
 ## Installation
 
 Follow these steps to install and run the text-to-speech converter:
