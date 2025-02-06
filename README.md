@@ -38,6 +38,7 @@ Suivez ces étapes pour installer et exécuter le convertisseur texte-audio :
     *   Téléchargez le fichier ZIP du dépôt GitHub.
 3.  **Extraire l'archive:**
     *   Extrayez le contenu du fichier ZIP dans un dossier de votre choix.
+    *   ajouter les modèles installé avec google drive
 4.  **Créer un environnement Anaconda:**
     *   Si vous n'avez pas Anaconda installé, téléchargez-le et installez-le depuis [le site officiel d'Anaconda](https://www.anaconda.com/products/distribution).
     *   Ouvrez Anaconda Prompt ou votre terminal.
