@@ -3,7 +3,7 @@
 [![Français](https://img.shields.io/badge/Langue-Français-blue.svg)](./README_FR.md)
 [![English](https://img.shields.io/badge/Language-English-green.svg)](./README_EN.md)
 
-[**Lire ce README en Français / Read this README in French**](./README.md)
+[**Lire ce README en Français / Read this README in French**](./README_FR.md)
 
 ## Description
 
@@ -62,6 +62,17 @@ Once the application is running, you can use the Gradio interface to:
 
 Have fun with the text-to-audio converter!
 
+## RVC Voice Models
+
+You can find a wide variety of pre-trained RVC voice models at [weights.gg](https://www.weights.gg/).
+
+To use these models with this converter:
+
+1.  **Download** the `.pth` and `.index` files of the RVC voice model you want to use from [weights.gg](https://www.weights.gg/).
+2.  **Place** the `.pth` file in the `modelRVG/pth/` folder of your project. Create the `pth` folder if it doesn't already exist.
+3.  **Place** the `.index` file in the `modelRVG/index/` folder of your project. Create the `index` folder if it doesn't already exist.
+4.  **Restart** the application by running `python main.py`. The new RVC voice models should now appear in the dropdown lists of the Gradio interface.
+
 ## Sources/Credits
 
 This project utilizes the following resources:
@@ -69,6 +80,10 @@ This project utilizes the following resources:
 *   **Kokoro-onnx:** [https://github.com/thewh1teagle/kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx) - ONNX implementation of the Kokoro TTS model.
 *   **Kokoro-82M version 1.0:** [https://huggingface.co/hexgrad/Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) - Pre-trained Kokoro TTS model on Hugging Face.
 *   **rvc-python:** [https://github.com/daswer123/rvc-python](https://github.com/daswer123/rvc-python) - Python library for RVC voice conversion.
+
+---
+
+Feel free to contribute to this project or report issues.
 
 ---
 
