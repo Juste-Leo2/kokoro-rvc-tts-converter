@@ -14,6 +14,16 @@ Ce projet est un convertisseur texte-audio qui utilise deux technologies puissan
 
 L'interface utilisateur est construite avec Gradio, offrant une expérience interactive et facile à utiliser directement dans votre navigateur.
 
+## Télécharger les Modèles Pré-entraînés (Requis)
+
+**Avant de continuer, vous devez télécharger les modèles pré-entraînés nécessaires au fonctionnement du convertisseur.**  Ces modèles incluent les fichiers `.bin`, `.onnx`, `.index` et `.pth` et sont essentiels pour Kokoro TTS et RVC.
+
+Vous pouvez les télécharger depuis Google Drive :
+
+[**Télécharger les Modèles Pré-entraînés (Google Drive)**](https://drive.google.com/drive/folders/1G6O0FgyFdwVjn3rMoJZRbg6gC1OrkaI9?usp=sharing)
+
+**Une fois téléchargé, assurez-vous de placer les fichiers correctement dans les dossiers appropriés de votre projet.**  Typiquement, les fichiers `.pth` et `.index` pour RVC vont dans `modelRVG/pth/` et `modelRVG/index/` respectivement, et les modèles Kokoro TTS (.bin, .onnx, .index) dans le dossier `model_tts` ou un dossier similaire selon la structure de votre projet.  **Vérifiez les instructions spécifiques à votre projet pour le placement exact des fichiers.**
+
 ## Installation
 
 Suivez ces étapes pour installer et exécuter le convertisseur texte-audio :
