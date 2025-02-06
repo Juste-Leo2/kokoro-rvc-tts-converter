@@ -37,6 +37,7 @@ Follow these steps to install and run the text-to-speech converter:
     *   Download the ZIP file of the GitHub repository.
 3.  **Extract the archive:**
     *   Extract the contents of the ZIP file into a folder of your choice.
+    *   add models installed with google drive
 4.  **Create an Anaconda environment:**
     *   If you do not have Anaconda installed, download and install it from [the official Anaconda website](https://www.anaconda.com/products/distribution).
     *   Open Anaconda Prompt or your terminal.
