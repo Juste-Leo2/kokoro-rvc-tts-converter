@@ -1,6 +1,6 @@
 # Kokoro TTS and RVC Text-to-Audio Converter
 
-[![Français](https://img.shields.io/badge/Langue-Français-blue.svg)](./README_FR.md)
+[![Français](https://img.shields.io/badge/Langue-Français-blue.svg)](./README.md)
 [![English](https://img.shields.io/badge/Language-English-green.svg)](./README_EN.md)
 
 [**Lire ce README en Français / Read this README in French**](./README_FR.md)
@@ -18,34 +18,40 @@ The user interface is built with Gradio, providing an interactive and easy-to-us
 
 Follow these steps to install and run the text-to-audio converter:
 
-1.  **Download the project:**
+1.  **Install Visual Studio Installer (Required for Windows):**
+    *   If you are on Windows, it is necessary to install Visual Studio Installer to compile some dependencies.
+    *   Download Visual Studio Installer from [the official Microsoft website](https://visualstudio.microsoft.com/downloads/). Choose to download "Visual Studio Community".
+    *   Run the downloaded installer program.
+    *   In the Visual Studio Installer, when selecting workloads, **check the box** `✅ Desktop development with C++` (you may need to scroll down to find it).
+    *   Continue with the installation, following the on-screen instructions. You do not need to select any other workloads or components for this project.
+2.  **Download the project:**
     *   Download the ZIP file of the GitHub repository.
-2.  **Extract the archive:**
+3.  **Extract the archive:**
     *   Extract the contents of the ZIP file to a folder of your choice.
-3.  **Create an Anaconda environment:**
+4.  **Create an Anaconda environment:**
     *   If you do not have Anaconda installed, download and install it from [the official Anaconda website](https://www.anaconda.com/products/distribution).
     *   Open Anaconda Prompt or your terminal.
     *   Create a new Anaconda environment named `kokoro_RVC` with Python 3.10 using the following command:
         ```bash
         conda create -n kokoro_RVC python=3.10
         ```
-4.  **Activate the environment:**
+5.  **Activate the environment:**
     *   Activate the `kokoro_RVC` environment with the command:
         ```bash
         conda activate kokoro_RVC
         ```
-5.  **Navigate to the project folder:**
+6.  **Navigate to the project folder:**
     *   Use the `cd` command to navigate to the folder where you extracted the project. For example:
         ```bash
         cd path/to/your/folder/kokoro-rvc-converter
         ```
-6.  **Install dependencies:**
+7.  **Install dependencies:**
     *   Run the following command to install all necessary Python libraries. Make sure you are still in the `kokoro_RVC` environment and in the project folder:
         ```bash
         python.exe -m pip install -r requirement1.txt && pip install -r requirement2.txt
         ```
     *   **Note:** If you are on a non-Windows system and `python.exe` does not work, try simply `python -m pip install -r requirement1.txt && pip install -r requirement2.txt`.
-7.  **Run the application:**
+8.  **Run the application:**
     *   Launch the application by running the command:
         ```bash
         python main.py
@@ -80,10 +86,6 @@ This project utilizes the following resources:
 *   **Kokoro-onnx:** [https://github.com/thewh1teagle/kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx) - ONNX implementation of the Kokoro TTS model.
 *   **Kokoro-82M version 1.0:** [https://huggingface.co/hexgrad/Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) - Pre-trained Kokoro TTS model on Hugging Face.
 *   **rvc-python:** [https://github.com/daswer123/rvc-python](https://github.com/daswer123/rvc-python) - Python library for RVC voice conversion.
-
----
-
-Feel free to contribute to this project or report issues.
 
 ---
 
