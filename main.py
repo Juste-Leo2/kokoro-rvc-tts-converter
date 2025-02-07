@@ -10,8 +10,8 @@ import numpy as np
 from rvc_python.infer import RVCInference  # Import RVCInference from rvc-python
 
 # --- Scanner les dossiers de modèles RVC ---
-RVC_INDEX_DIR = "modelRVG/index"
-RVC_PTH_DIR = "modelRVG/pth"
+RVC_INDEX_DIR = "modelRVC/index"
+RVC_PTH_DIR = "modelRVC/pth"
 
 AVAILABLE_INDEX_FILES = []
 AVAILABLE_PTH_FILES = []
