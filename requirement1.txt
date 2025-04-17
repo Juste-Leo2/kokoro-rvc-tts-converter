@@ -1,4 +1,0 @@
-gradio
-kokoro-onnx
-soundfile
-pip==24.0
