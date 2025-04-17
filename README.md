@@ -1,103 +1,54 @@
-# Convertisseur Texte-Audio Kokoro TTS et RVC
+# Kokoro TTS and RVC Text-to-Speech Converter 🎙️🧠
 
-[![Français](https://img.shields.io/badge/Langue-Français-blue.svg)](./README.md)
-[![English](https://img.shields.io/badge/Language-English-green.svg)](./README_EN.md)
-
-[**Lire ce README en Anglais / Read this README in English**](./README_EN.md)
+[![Français](https://img.shields.io/badge/Langue-Français-blue.svg)](./READMEFR.md)
+[![English](https://img.shields.io/badge/Language-English-green.svg)](./README.md)
 
 ## Description
 
-Ce projet est un convertisseur texte-audio qui utilise deux technologies puissantes :
+This project is a text-to-speech converter using:
 
-*   **Kokoro TTS (Text-to-Speech):**  Pour la synthèse vocale de haute qualité à partir de texte.
-*   **RVC (Retrieval-Based Voice Conversion):**  Pour convertir la voix synthétisée par Kokoro TTS en celle de différents personnages ou styles vocaux, en utilisant des modèles pré-entraînés.
+- **Kokoro TTS** for high-quality speech synthesis 🗣️
+- **RVC** (Retrieval-Based Voice Conversion) for flexible voice transformations 🎛️
 
-L'interface utilisateur est construite avec Gradio, offrant une expérience interactive et facile à utiliser directement dans votre navigateur.
+The interface runs through **Gradio** and opens via a link in your terminal 🌐
 
-## Télécharger les Modèles Pré-entraînés (Requis)
+## What's New
 
-**Avant de continuer, vous devez télécharger les modèles pré-entraînés nécessaires au fonctionnement du convertisseur.**  Ces modèles incluent les fichiers `.bin`, `.onnx`, `.index` et `.pth` et sont essentiels pour Kokoro TTS et RVC.
+- ✅ Full support for all Kokoro TTS 1.0 languages
+- ⚡ One-step installation using `run_windows.bat`
+- 🔁 Auto-setup with `uv`: virtual environment, dependencies, models — all handled for you!
 
-Vous pouvez les télécharger depuis Google Drive :
+## Installation (Windows)
 
-[**Télécharger les Modèles Pré-entraînés (Google Drive)**](https://drive.google.com/drive/folders/1G6O0FgyFdwVjn3rMoJZRbg6gC1OrkaI9?usp=sharing)
+1. Install [**Python 3.10**](https://www.python.org/downloads/release/python-3100/) and add it to your system `PATH`
+2. Download or clone this repository
+3. Run `run_windows.bat` — that's it!
 
-**Une fois téléchargé, assurez-vous de placer les fichiers correctement dans les dossiers appropriés de votre projet.**  Typiquement, les fichiers `.pth` et `.index` pour RVC vont dans `modelRVC/pth/` et `modelRVC/index/` respectivement, et les modèles Kokoro TTS (.bin, .onnx) dans le dossier `model_tts`.  
 
-## Installation
+## Installation (Linux)
 
-Suivez ces étapes pour installer et exécuter le convertisseur texte-audio :
+1. Download or clone this repository
+2. open terminal and run in project folder `chmod +x run_linux_experimental.sh` — that's it!
 
-1.  **Installer Visual Studio Installer (Requis pour Windows):**
-    *   Si vous êtes sur Windows, il est nécessaire d'installer Visual Studio Installer pour compiler certaines dépendances.
-    *   Téléchargez Visual Studio Installer depuis [le site officiel de Microsoft](https://visualstudio.microsoft.com/fr/downloads/).  Choisissez de télécharger "Visual Studio Community".
-    *   Exécutez le programme d'installation téléchargé.
-    *   Dans l'installateur de Visual Studio, lors de la sélection des charges de travail, **cochez la case**  `✅ Développement Desktop en C++` (vous pourriez devoir faire défiler la liste pour la trouver).
-    *   Continuez l'installation en suivant les instructions à l'écran.  Vous n'avez pas besoin de sélectionner d'autres charges de travail ou composants pour ce projet.
-2.  **Télécharger le projet:**
-    *   Téléchargez le fichier ZIP du dépôt GitHub.
-3.  **Extraire l'archive:**
-    *   Extrayez le contenu du fichier ZIP dans un dossier de votre choix.
-    *   ajouter les modèles installé avec google drive
-4.  **Créer un environnement Anaconda:**
-    *   Si vous n'avez pas Anaconda installé, téléchargez-le et installez-le depuis [le site officiel d'Anaconda](https://www.anaconda.com/products/distribution).
-    *   Ouvrez Anaconda Prompt ou votre terminal.
-    *   Créez un nouvel environnement Anaconda nommé `kokoro_RVC` avec Python 3.10 en utilisant la commande suivante :
-        ```bash
-        conda create -n kokoro_RVC python=3.10
-        ```
-5.  **Activer l'environnement:**
-    *   Activez l'environnement `kokoro_RVC` avec la commande :
-        ```bash
-        conda activate kokoro_RVC
-        ```
-6.  **Naviguer vers le dossier du projet:**
-    *   Utilisez la commande `cd` pour vous déplacer dans le dossier où vous avez extrait le projet. Par exemple :
-        ```bash
-        cd chemin/vers/le/dossier/kokoro-rvc-converter
-        ```
-7.  **Installer les dépendances:**
-    *   Exécutez la commande suivante pour installer toutes les bibliothèques Python nécessaires. Assurez-vous d'être toujours dans l'environnement `kokoro_RVC` et dans le dossier du projet :
-        ```bash
-        python.exe -m pip install -r requirement1.txt && pip install -r requirement2.txt
-        ```
-    *   **Note:**  Si vous êtes sur un système autre que Windows et que `python.exe` ne fonctionne pas, essayez simplement `python -m pip install -r requirement1.txt && pip install -r requirement2.txt`.
-8.  **Exécuter l'application:**
-    *   Lancez l'application en exécutant la commande :
-        ```bash
-        python main.py
-        ```
-    *   L'interface Gradio s'ouvrira automatiquement dans votre navigateur web.
 
-## Utilisation
+### these scripts will:
+- Install `uv` if it's missing
+- Set up a virtual environment
+- Install all required packages
+- Download Kokoro TTS models into `modelTTS/`
 
-Une fois l'application lancée, vous pouvez utiliser l'interface Gradio pour :
 
-*   **Synthétiser de la parole avec Kokoro TTS** à partir de texte.
-*   **Convertir la voix** en utilisant des modèles RVC, en appliquant un changement de ton (pitch shift).
-*   **Combiner les deux** en générant de la parole TTS et en la convertissant en voix RVC en une seule étape.
+## Using RVC Models 🎧
 
-Amusez-vous avec le convertisseur texte-audio !
+1. Download `.pth` and `.index` files from [weights.gg](https://www.weights.gg/)
+2. Place:
+   - `.pth` files in `modelRVC/pth/`
+   - `.index` files in `modelRVC/index/`
 
-## Modèles de Voix RVC
+## Credits 🙏
 
-Vous pouvez trouver une grande variété de modèles de voix RVC pré-entraînés sur [weights.gg](https://www.weights.gg/).
+Special thanks to:
 
-Pour utiliser ces modèles avec ce convertisseur :
-
-1.  **Téléchargez** les fichiers `.pth` et `.index` du modèle de voix RVC que vous souhaitez utiliser depuis [weights.gg](https://www.weights.gg/).
-2.  **Placez** le fichier `.pth` dans le dossier `modelRVG/pth/` de votre projet. Créez le dossier `pth` s'il n'existe pas déjà.
-3.  **Placez** le fichier `.index` dans le dossier `modelRVG/index/` de votre projet. Créez le dossier `index` s'il n'existe pas déjà.
-4.  **Relancez** l'application `python main.py`. Les nouveaux modèles de voix RVC devraient maintenant apparaître dans les listes déroulantes de l'interface Gradio.
-
-## Sources
-
-Ce projet utilise les ressources suivantes :
-
-*   **Kokoro-onnx:** [https://github.com/thewh1teagle/kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx) - Implémentation ONNX du modèle Kokoro TTS.
-*   **Kokoro-82M version 1.0:** [https://huggingface.co/hexgrad/Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) - Modèle Kokoro TTS pré-entraîné sur Hugging Face.
-*   **rvc-python:** [https://github.com/daswer123/rvc-python](https://github.com/daswer123/rvc-python) - Librairie Python pour la conversion vocale RVC.
-
----
-
-N'hésitez pas à contribuer à ce projet ou à signaler des problèmes.
+- [kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx) — ONNX version of the Kokoro TTS model
+- [Hexgrad](https://huggingface.co/hexgrad) — Original author of Kokoro TTS (Kokoro-82M)
+- [rvc-python](https://github.com/daswer123/rvc-python) — RVC implementation and tooling
