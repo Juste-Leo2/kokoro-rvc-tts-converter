@@ -20,21 +20,29 @@ L'interface utilise **Gradio** et s’ouvre via un lien cliquable dans votre ter
 
 ## Installation (Windows)
 
-1. Installez [**Python 3.10**](https://www.python.org/downloads/release/python-3100/) et ajoutez-le à votre `PATH`
-2. Téléchargez ou clonez ce dépôt Git
-3. Lancez `run_windows.bat` — et c’est tout !
+1. Installez [**Python 3.10**](https://www.python.org/downloads/release/python-3100/) et ajoutez-le à votre `PATH` système.
+2. Téléchargez ou clonez ce dépôt.
+3. **Installez UV manuellement** :
+   
+   Ouvrez **Invite de commandes** ou **PowerShell** et exécutez :
+   ```bash
+   pip install uv
+   ```
+4. Exécutez `run_windows.bat` — et c'est tout !
 
 ## Installation (Linux)
 
-1. Téléchargez ou clonez ce dépôt Git
-2. ouvrir le terminal et exécuter dans le dossier du projet `chmod +x run_linux_experimental.sh` — et c’est tout !
+1. **Téléchargez ou clonez ce dépôt**.
+
+2. **Ouvrez le terminal et exécutez dans le dossier du projet** :
+   ```bash
+   chmod +x run_linux_experimental.sh
+   ```
 
 ### Ces scripts vont :
-
-- Installer `uv` si nécessaire
-- Créer un environnement virtuel
-- Installer les dépendances
-- Télécharger les modèles Kokoro TTS dans `modelTTS/`
+- Configurer un environnement virtuel
+- Installer tous les packages requis
+- Télécharger les modèles Kokoro TTS dans le dossier `modelTTS/`
 
 ## Utiliser des modèles RVC 🎧
 

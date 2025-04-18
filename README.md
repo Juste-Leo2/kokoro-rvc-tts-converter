@@ -22,17 +22,24 @@ The interface runs through **Gradio** and opens via a link in your terminal 🌐
 
 1. Install [**Python 3.10**](https://www.python.org/downloads/release/python-3100/) and add it to your system `PATH`
 2. Download or clone this repository
-3. Run `run_windows.bat` — that's it!
+3. **Install UV manually**:
+   
+   Open **Command Prompt** or **PowerShell** and run:
+   ```bash
+   pip install uv
+4. Run `run_windows.bat` — that's it!
 
 
 ## Installation (Linux)
 
-1. Download or clone this repository
-2. open terminal and run in project folder `chmod +x run_linux_experimental.sh` — that's it!
+1. **Download or clone this repository**.
+
+2. **Open terminal and run in the project folder**:
+   ```bash
+   chmod +x run_linux_experimental.sh
 
 
 ### these scripts will:
-- Install `uv` if it's missing
 - Set up a virtual environment
 - Install all required packages
 - Download Kokoro TTS models into `modelTTS/`
