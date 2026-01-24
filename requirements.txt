@@ -70,7 +70,7 @@ platformdirs==4.3.7
 pooch==1.8.2
 portalocker==3.1.1
 praat-parselmouth==0.4.5
-protobuf==6.30.2
+protobuf==7.34.0rc1
 pycparser==2.22
 pydantic==2.11.3
 pydantic-core==2.33.1
